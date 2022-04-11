@@ -1,0 +1,1098 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Style */
+body{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.whale-section{
+    width: 100%;
+    height: 100%;
+}
+
+.current-page{
+    color: #FCB72B !important;
+}
+
+.header__logo{
+    z-index: 3;
+}
+
+.header{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.humburger-icon{
+    position: absolute;
+    left: 2rem;
+    top: 26px;
+    cursor: pointer;
+    transition: transform 1.5s, opacity 1.5s;
+}
+
+
+.close-icon{
+    position: absolute;
+    left: 2.05rem;
+    top: 25px;
+    cursor: pointer;
+    opacity: 0;
+    transition: transform 1.5s, opacity 1.5s;
+    z-index: -1;
+}
+
+.header__menu{
+    position: fixed;
+    height: 100vh;
+    top: 4rem;
+    left: -20rem;
+    width: 16rem;
+    background-color: #333A44;
+    padding: 4rem 2rem 5.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: left 2s;
+}
+
+.showMenu{
+    left: 0;
+}
+
+.header__menu__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.header__menu__list li{
+    list-style: none;
+}
+
+.header__menu__list li a{
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    font-weight: 700;
+    color: #E5ECF4;
+}
+
+.btn-get-scootin{
+    width: 100%;
+    height: 3.3rem;
+    background-color: #FCB72B;
+    border: none;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.content__head{
+    height: 10rem;
+    background: url(/starter-code/assets/images/about-hero-mobile.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__head h1{
+    font-family: 'Space Mono', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40;
+    letter-spacing: -1.79px;
+    color: #fff;
+}
+
+.content__about{
+    display: flex;
+    flex-direction: column;
+    gap: 7.5rem;
+    margin: 4.5rem 0;
+}
+
+.about__block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    gap: 3.5rem;
+}
+
+.about__block__image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 327px;
+    width: 100%;
+    padding-top: 1rem; 
+}
+
+.image-big{
+    width: 311px;
+    height: 311px;
+    border-radius: 50%;
+}
+
+.left-up-arrow{
+    position: relative;
+    left: 13.1rem;
+    top: -11.35rem;
+}
+
+.about__block__text{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.about__block__text h3{
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+    color: #495567;
+}
+
+.about__block__text p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    width: 311px;
+    padding: 0 0.8rem;
+}
+
+.right-arrow{
+    position: relative;
+    left: -4.15rem;
+    top: -20rem;
+}
+
+.content__values{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.value__head h2{
+    font-family: 'Space Mono', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+    color: #495567;
+}
+
+.value__block-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.value__block{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.value__block__image img{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+}
+
+.value__block__image p{
+    position: relative;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: #FCB72B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0);
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    color: #495567;
+    margin-top: -3.5rem;
+}
+
+.value__block__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.6rem;
+    padding: 0 2rem;
+}
+
+.value__block__text h4{
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    color: #495567;
+}
+
+.value__block__text p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    padding: 0 0.8rem;
+}
+
+.content__faq{
+    margin: 9rem 0 7.5rem 0;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.faq__head h2{
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height:32px;
+    letter-spacing: -1.43px;
+    color: #495567;
+}
+
+.faq__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.faq__section__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.faq__section__block__head{
+    margin-bottom: 1rem;
+}
+
+.faq__section__block__head h4{
+    font-family: 'Space Mono', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    color: #495567;
+}
+
+.faq__section__block__question{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem;
+    background-color: #F2F5F9;
+    width: 19.5rem;
+}
+
+.faq__section__block__question__vissible{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 3rem;
+}
+
+.question__text{
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.8px;
+    color: #495567;
+}
+
+.faq__section__block__question__vissible img{
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+.answer__text{
+    position: relative;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 25px;
+    color: #495567;
+    height: 0;
+    font-size: 0;
+    transition: height 2s, font-size 2s, padding 2s;  
+}
+
+.show-answer{
+    height: 12.5rem;
+    font-size: 15px;
+}
+
+.footer{
+    margin-top: 8.75rem;
+}
+
+.footer__signup{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(/starter-code/assets/patterns/semi-circles.svg),
+    #495567;
+    background-size: 2000px;
+    background-repeat: no-repeat;
+    background-position-x: -1160px;
+    background-position-y: bottom;
+    text-align: center;
+    gap: 2.5rem;
+    padding: 0 2rem;
+}
+
+.footer__signup h2{
+    font-family: 'Space Mono', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+    color: #fff;
+}
+
+.footer__signup__links{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.footer__signup__links img{
+    width: 7.1rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.footer__links{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: #333A44;
+}
+
+.footer__links__logo svg path{
+    fill: #fff;
+}
+
+.footer__links__contact ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.footer__links__contact ul li{
+    list-style: none;
+}
+
+.footer__links__contact ul li a{
+    text-decoration: none;
+    color: #939CAA;
+    font-family: "Space Mono", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.footer__links__social ul{
+    display: flex;
+    flex-direction: row;
+    width: 7.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__links__social ul li{
+    list-style: none;
+}
+
+.footer__links__social ul li a{
+    text-decoration: none;
+}
+
+@media screen and (min-width:480px){
+    .value__block__text p{
+        width: 19.5rem;
+    }
+    .footer__signup{
+        padding: 0 8rem;
+        background-position-x: -980px;
+    }
+
+    .footer__signup h2{
+        width: 19.5rem;
+    }   
+}
+
+@media screen and (min-width: 768px){
+    .header{
+        height: 6rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.4rem 2.1rem;
+        gap: 3.6rem;
+    }
+    
+    .mobile{
+        display: none;
+    }
+    
+    .header__menu{
+        position: static;
+        height: 100%;
+        width: 0;
+        background: none;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header__logo{
+        order: -1;
+    }
+    
+    .header__menu__list{
+        flex-direction: row;
+        gap: 1.75rem;
+    }
+    
+    .header__menu__list li a{
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 700;
+        color: #939CAA;
+    }
+    
+    .btn-get-scootin{
+        width: 11.25rem;
+        height: 3.3rem;
+        line-height: 25px;
+    }
+
+    .content__head{
+        height: 12.5rem;
+        background: url(/starter-code/assets/patterns//white-circles.svg),
+            url(/starter-code/assets/images/about-hero-tablet.jpg);
+        background-repeat: no-repeat;
+        background-position: 107% center, center;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 0 6rem;
+    }
+    
+    .content__head h1{
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+    }
+    
+    .content__about{
+        margin: 9rem 0;
+    }
+    
+    .about__block__image{
+        height: 445px;
+        padding-top: 0; 
+        background: url(../assets/patterns/circle.svg);
+        background-repeat: no-repeat;
+        background-position-x: 673px;
+    }
+    
+    .image-big{
+        width: 445px;
+        height: 445px;
+    }
+    
+    .left-up-arrow{
+        left: 1rem;
+        top: -11.35rem;
+    }
+    
+    .about__block__text{
+        width: 35.8rem;
+        padding: 0;
+        gap: 2.5rem;
+    }
+    
+    .about__block__text h3{
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14px;
+        width: 28.5rem;
+    }
+    
+    .about__block__text p{
+        width: 100%;
+        padding: 0;
+    }
+
+    .background-circle{
+        background-position-x: -345px !important;
+    }
+    
+    .right-arrow{
+        position: relative;
+        left: -17rem;
+        top: -28rem;
+    }
+    
+    .content__values{
+        gap: 6.5rem;
+    }
+    
+    .value__head h2{
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14px;
+    }
+    
+    .value__block-section{
+        gap: 3.5rem;
+    }
+    
+    .value__block{
+        gap: 2rem;
+    }
+    
+    .value__block__text{
+        width: 28.5rem;
+        padding: 0;
+    }
+    
+    .value__block__text p{
+        width: 100%;
+        padding: 0;
+    }
+    
+    .content__faq{
+        margin: 7.5rem 0 7.5rem 0;
+        padding: 0 2rem;
+        gap: 4rem;
+    }
+    
+    .faq__head h2{
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14px;
+    }
+    
+    .faq__section{
+        gap: 4rem;
+    }
+    
+    .faq__section__block{
+        width: 43rem;
+        gap: 2rem;
+    }
+    
+    .faq__section__block__head{
+        margin-bottom: 2rem;
+    }
+    
+    .faq__section__block__head h4{
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -1.79px;
+    }
+    
+    .faq__section__block__question{
+        width: 100%;
+    }
+    
+    .faq__section__block__question__vissible{
+        width: 100%;
+        height: 1.75rem;
+    }
+    
+    .question__text{
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07px;
+    }
+    
+    .faq__section__block__question__vissible img{
+        cursor: pointer;
+        transition: transform 2s;
+    }
+    
+    .answer__text{
+        line-height: 25px;
+    }
+    
+    .show-answer{
+        height: 6.1rem;
+    }
+
+    .footer{
+        margin-top: 6.5rem;
+    }
+    
+    .footer__signup{
+        height: 18.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: url(/starter-code/assets/patterns/semi-circles.svg),
+        #495567;
+        background-size: 1200px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: bottom;
+        text-align: center;
+        gap: 2.5rem;
+        padding: 0 9.6rem;
+    }
+    
+    .footer__signup h2{
+        font-family: 'Space Mono', sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -2.14px;
+        color: #fff;
+    }
+    
+    .footer__signup__links{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    .footer__signup__links img{
+        width: 7.1rem;
+        height: 2.5rem;
+        cursor: pointer;
+    }
+    
+    .footer__links{
+        padding: 2em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        background-color: #333A44;
+    }
+    
+    .footer__links__logo svg path{
+        fill: #fff;
+    }
+
+    .footer__links__contact{
+        margin-left: -7rem;
+    }
+    
+    .footer__links__contact ul{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .footer__links__contact ul li{
+        list-style: none;
+    }
+    
+    .footer__links__contact ul li a{
+        text-decoration: none;
+        color: #939CAA;
+        font-family: "Space Mono", sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    .footer__links__social ul{
+        display: flex;
+        flex-direction: row;
+        width: 7.5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer__links__social ul li{
+        list-style: none;
+    }
+    
+    .footer__links__social ul li a{
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .content__head{
+        background-repeat: no-repeat;
+        background-position: 107% center, center;
+        background-size: 35%, cover;
+        background-repeat: no-repeat;
+    }
+
+    .about__block__image{
+        height: 445px;
+        padding-top: 0; 
+        background: url(../assets/patterns/circle.svg);
+        background-repeat: no-repeat;
+        background-position-x: 820px;
+    }
+
+    .left-up-arrow{
+        left: 6rem;
+        top: -11.35rem;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .desktop{
+        display: block;
+    }
+
+    .header{
+        height: 6rem;
+        padding: 0 10.5rem;
+    }
+    
+    .header__menu__list li a:hover{
+        color: #FCB72B;
+    }
+    
+    .btn-get-scootin:hover{
+        border: 3px solid #FCB72B;
+        background-color: #fff;
+        color: #FCB72B;
+    }
+    
+    .content__head{
+        height: 12.5rem;
+        background: url(/starter-code/assets/patterns//white-circles.svg),
+            url(/starter-code/assets/images/about-hero-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: 18%, cover;
+        background-position: 103% center, center;
+        padding: 0 10.1rem;
+    }
+
+    .content__head h1{
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+    }
+
+    .content__about{
+        align-items: end;
+        gap: 7.5rem;
+        margin: 7.5rem 0;
+    }
+
+    .about__block{
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 2rem;
+        width: 79.6rem;
+    }
+
+    .about__block__image{
+        height: 445px;
+        width: 100%;
+        padding-top: 0; 
+        order: 1;
+        background: url(../assets/patterns/circle.svg);
+        background-repeat: no-repeat;
+        background-position-x: 673px;
+    }
+
+    .image-big{
+        width: 445px;
+        height: 445px;
+    }
+
+    .left-up-arrow{
+        position: relative;
+        left: 1rem;
+        top: -11.35rem;
+    }
+
+    .about__block__text{
+        padding: 0;
+        width: 27.8rem;
+        align-items: center;
+        text-align: left;
+        gap: 1.5rem;
+    }
+
+    .about__block__text h3{
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14px;
+    }
+
+    .about__block__text p{
+        width: 100%;
+        padding: 0;
+    }
+
+    .right-block{
+        position: absolute;
+        margin-top: 35.3rem;
+        left: 0;
+        gap: 200px;
+    }
+
+    .background-circle{
+        align-items: end;
+        order: -1;
+    }
+
+    .right-arrow{
+        position: relative;
+        left: -17.15rem;
+        top: -28rem;
+    }
+
+    .content__values{
+        margin: 42.8rem 10.3rem 0 10.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6.4rem;
+    }
+
+    .value__head h2{
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14px;
+    }
+
+    .value__block-section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.8rem;
+    }
+
+    .value__block{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .value__block__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.6rem;
+        padding: 0;
+        width: 100%;
+    }
+
+    .value__block__text p{
+        padding: 0;
+    }
+
+    .content__faq{
+        margin: 5.8rem 10.3rem 7.5rem 10.3rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .faq__head h2{
+        font-size: 48px;
+        line-height:48px;
+        letter-spacing: -2.14px;
+    }
+
+    .faq__section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        width: 100%;
+    }
+
+    .faq__section__block{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        gap: 1.8rem;
+        width: 100%;
+    }
+
+    .faq__section__block__head{
+        margin-bottom: 1rem;
+    }
+
+    .desk-block{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .faq__section__block__head h4{
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -1.79px;
+        
+    }
+
+    .faq__section__block__question{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 2.5rem;
+        background-color: #F2F5F9;
+        width: 45.6rem;
+    }
+
+    .faq__section__block__question__vissible{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 1.75rem;
+    }
+
+    .question__text{
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07px;
+    }
+
+    .answer__text{
+        line-height: 25px;
+    }
+    
+    .show-answer{
+        height: 4.6rem;
+    }
+
+    .footer{
+        margin-top: 12.5rem;
+    }
+    
+    .footer__signup{
+        height: 24.75rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: url(/starter-code/assets/patterns/semi-circles.svg),
+        #495567;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-x: 14rem;
+        background-position-y: bottom;
+        text-align: left;
+        gap: 2.5rem;
+        padding: 0 10.3rem;
+    }
+    
+    .footer__signup h2{
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14px;
+        color: #fff;
+        width: 25.9rem;
+    }
+    
+    .footer__signup__links{
+        display: flex;
+        flex-direction: row;
+        gap: 1.1rem;
+    }
+    
+    .footer__signup__links img{
+        width: 9.9rem;
+        height: 3.5rem;
+        cursor: pointer;
+    }
+    
+    .footer__links{
+        height: 6rem;
+        padding: 0 10.6rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .footer__links__logo svg path{
+        fill: #fff;
+    }
+    
+    .footer__links__contact ul{
+        margin-left: -19rem;
+        flex-direction: row;
+        text-align: center;
+        gap: 1.75rem;
+    }
+    
+    .footer__links__contact ul li a:hover{
+        color: #FCB72B;
+    }
+    
+    .footer__links__social ul li:hover a svg path{
+        fill: #E5ECF4;
+    }
+}

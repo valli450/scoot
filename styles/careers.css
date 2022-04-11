@@ -1,0 +1,922 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Style */
+body{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.whale-section{
+    width: 100%;
+    height: 100%;
+}
+
+.current-page{
+    color: #FCB72B !important;
+}
+
+.header__logo{
+    z-index: 3;
+}
+
+.header{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.humburger-icon{
+    position: absolute;
+    left: 2rem;
+    top: 26px;
+    cursor: pointer;
+    transition: transform 1.5s, opacity 1.5s;
+}
+
+
+.close-icon{
+    position: absolute;
+    left: 2.05rem;
+    top: 25px;
+    cursor: pointer;
+    opacity: 0;
+    transition: transform 1.5s, opacity 1.5s;
+    z-index: -1;
+}
+
+.header__menu{
+    position: fixed;
+    height: 100vh;
+    top: 4rem;
+    left: -20rem;
+    width: 16rem;
+    background-color: #333A44;
+    padding: 4rem 2rem 5.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: left 2s;
+}
+
+.showMenu{
+    left: 0;
+}
+
+.header__menu__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.header__menu__list li{
+    list-style: none;
+}
+
+.header__menu__list li a{
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    font-weight: 700;
+    color: #E5ECF4;
+}
+
+.btn-get-scootin{
+    width: 100%;
+    height: 3.3rem;
+    background-color: #FCB72B;
+    border: none;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.content__head{
+    height: 10rem;
+    background: url(../assets/images/careers-location-hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__head h1{
+    font-family: 'Space Mono', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1.79px;
+    color: #fff;
+}
+
+.content__mission{
+    margin: 4.5rem 0 7.5rem 0;
+}
+
+.mission__image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 320px;
+}
+
+.image-title{
+    width: 311px;
+    height: 311px;
+    border-radius: 50%;
+}
+
+.mission-arrow{
+    position: relative;
+    left: 13.3rem;
+    top: -9.2rem;
+}
+
+.mission__text{
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.mission__text h3{
+    font-family: "Space Mono", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+    color: #495567;
+}
+
+.mission__text p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
+
+.mission__text button{
+    width: 11.25rem;
+    height: 3.3rem;
+    border: none;
+    background-color: #FCB72B;
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.content__about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 4rem;
+}
+
+.about__head h2{
+    font-family: 'Space Mono', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+    color: #495567;
+}
+
+.about__flex{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.about__flex__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about__flex__block__image img{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+}   
+
+.about__flex__block__image p{
+    position: relative;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: #FCB72B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0);
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    color: #495567;
+    margin-top: -3.5rem;
+}
+
+.about__flex__block__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.6rem;
+}
+
+.about__flex__block__text h4{
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    color: #495567;
+}
+
+.about__flex__block__text p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    padding: 0 0.8rem;
+}
+
+.content__employees{
+    margin: 9rem 2rem  7.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.employees__block{
+    width: 100%;
+    height: 11.8rem; 
+    background-color: #F2F5F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.employees__block h5{
+    font-family: 'Space Mono', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.8px;
+    color: #495567;
+}
+
+.employees__block p{
+    margin: 4px 0 16px 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: #495567;    
+}
+
+.employees__block button{
+    width: 247px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    background-color: #FCB72B;
+    font-family:  "Space Mono", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #fff;
+}
+
+.footer{
+    margin-top: 4.5rem;
+}
+
+.footer__signup{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(/starter-code/assets/patterns/semi-circles.svg),
+    #495567;
+    background-size: 2000px;
+    background-repeat: no-repeat;
+    background-position-x: -1160px;
+    background-position-y: bottom;
+    text-align: center;
+    gap: 2.5rem;
+    padding: 0 2rem;
+}
+
+.footer__signup h2{
+    font-family: 'Space Mono', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+    color: #fff;
+}
+
+.footer__signup__links{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.footer__signup__links img{
+    width: 7.1rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.footer__links{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: #333A44;
+}
+
+.footer__links__logo svg path{
+    fill: #fff;
+}
+
+.footer__links__contact ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.footer__links__contact ul li{
+    list-style: none;
+}
+
+.footer__links__contact ul li a{
+    text-decoration: none;
+    color: #939CAA;
+    font-family: "Space Mono", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.footer__links__social ul{
+    display: flex;
+    flex-direction: row;
+    width: 7.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__links__social ul li{
+    list-style: none;
+}
+
+.footer__links__social ul li a{
+    text-decoration: none;
+}
+
+@media screen and (min-width: 480px){
+    .mission__text h3{
+        width: 450px;
+    }
+    
+    .mission__text p{
+        width: 450px;
+    }
+
+    .about__flex__block__text p{
+        width: 450px;
+    }
+    
+
+    .employees__block{
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header{
+        height: 6rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.4rem 2.1rem;
+        gap: 3.6rem;
+    }
+    
+    .mobile{
+        display: none;
+    }
+    
+    .header__menu{
+        position: static;
+        height: 100%;
+        width: 0;
+        background: none;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header__logo{
+        order: -1;
+    }
+    
+    .header__menu__list{
+        flex-direction: row;
+        gap: 1.75rem;
+    }
+    
+    .header__menu__list li a{
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 700;
+        color: #939CAA;
+    }
+    
+    .btn-get-scootin{
+        width: 11.25rem;
+        height: 3.3rem;
+        line-height: 25px;
+    }
+
+    .content__head{
+        height: 12.5rem;
+        background: url(../assets/patterns/white-circles.svg),
+            url(../assets/images/careers-locations-hero-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: 200px, 100%;
+        background-position: 105% center, center;
+        justify-content: start;
+        padding: 0 6rem;
+    }
+    
+    .content__head h1{
+        font-size: 56px;
+        line-height: 56px;
+        color: #fff;
+    }
+    
+    .content__mission{
+        margin: 9rem 0 7.5rem 0;
+    }
+    
+    .mission__image{
+        background-image: url(../assets/patterns/circle.svg);
+        background-repeat: no-repeat;
+        background-position-x: 670px;
+        height: 445px;
+    }
+    
+    .image-title{
+        width: 445px;
+        height: 445px;
+    }
+    
+    .mission-arrow{
+        position: relative;
+        left: 1rem;
+        top: -9.2rem;
+    }
+    
+    .mission__text{
+        margin-top: 4rem;
+        gap: 2.5rem;
+    }
+    
+    .mission__text h3{
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14px;
+        width: 28.5rem;
+    }
+    
+    .mission__text p{
+        width: 35.8rem;
+    }
+    
+    .content__about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2rem;
+        gap: 4rem;
+    }
+    
+    .about__head h2{
+        font-family: 'Space Mono', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -1.43px;
+        color: #495567;
+    }
+    
+    .about__flex{
+        gap: 6.5rem;
+    }
+    
+    .about__flex__block{
+        gap: 2rem;
+    }
+    
+    .about__flex__block__image img{
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+    }  
+
+    .about__flex__block__text p{
+        width: 457px;
+        padding: 0;
+    }
+    
+    .content__employees{
+        margin: 7.5rem 2.4rem  7.5rem 2.4rem;
+    }
+    
+    .employees__block{
+        width: 100%;
+        height: 8rem; 
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 3rem;
+    }
+    
+    .employees__block__text{
+        width: 12.8rem;
+    }
+
+    .employees__block h5{
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07px;
+    }
+    
+    .employees__block p{
+        margin: 8px 0 0 0;   
+    }
+    
+    .employees__block button{
+        width: 180px;
+    }
+
+    .footer{
+        margin-top: 6.5rem;
+    }
+    
+    .footer__signup{
+        height: 18.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: url(/starter-code/assets/patterns/semi-circles.svg),
+        #495567;
+        background-size: 1200px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: bottom;
+        text-align: center;
+        gap: 2.5rem;
+        padding: 0 9.6rem;
+    }
+    
+    .footer__signup h2{
+        font-family: 'Space Mono', sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -2.14px;
+        color: #fff;
+    }
+    
+    .footer__signup__links{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    .footer__signup__links img{
+        width: 7.1rem;
+        height: 2.5rem;
+        cursor: pointer;
+    }
+    
+    .footer__links{
+        padding: 2em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        background-color: #333A44;
+    }
+    
+    .footer__links__logo svg path{
+        fill: #fff;
+    }
+
+    .footer__links__contact{
+        margin-left: -7rem;
+    }
+    
+    .footer__links__contact ul{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .footer__links__contact ul li{
+        list-style: none;
+    }
+    
+    .footer__links__contact ul li a{
+        text-decoration: none;
+        color: #939CAA;
+        font-family: "Space Mono", sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    .footer__links__social ul{
+        display: flex;
+        flex-direction: row;
+        width: 7.5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer__links__social ul li{
+        list-style: none;
+    }
+    
+    .footer__links__social ul li a{
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .mission__image{
+        background-position-x: 820px;
+    }
+
+    .mission-arrow{
+        left: 5rem;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .desktop{
+        display: block;
+    }
+
+    .header{
+        height: 6rem;
+        padding: 0 10.5rem;
+    }
+    
+    .header__menu__list li a:hover{
+        color: #FCB72B;
+    }
+    
+    .btn-get-scootin:hover{
+        border: 3px solid #FCB72B;
+        background-color: #fff;
+        color: #FCB72B;
+    }
+
+    .content__head{
+        padding: 0 10.5rem;
+        background-position: 102% center, center;
+    }
+
+    .content__mission{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        gap: 5.9rem;
+    }
+    
+    .mission__image{
+        order: 2;
+        height: 445px;
+        background-image: url(../assets/patterns/circle.svg);
+        background-repeat: no-repeat;
+        background-position-x: 665px;
+    }
+    
+    .image-title{
+        width: 445px;
+        height: 445px;
+        border-radius: 50%;
+    }
+    
+    .mission-arrow{
+        position: relative;
+        left: 1.5rem;
+        top: -9.2rem;
+    }
+    
+    .mission__text{
+        margin: 0;
+        align-items: start;
+        justify-content: start;
+        text-align: left;
+        gap: 1.5rem;
+        padding: 0;
+        width: 27.8rem;
+    }
+    
+    .mission__text h3{
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .mission__text p{
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        width: 100%;
+    }
+    
+    .mission__text button{
+        margin-top: 1rem;
+    }
+
+    .mission__text button:hover{
+        border: 3px solid #FCB72B;
+        background-color: #fff;
+        color: #FCB72B;
+    }
+
+    .content__about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2rem;
+        gap: 6.4rem;
+    }
+    
+    .about__head h2{
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14px;
+    }
+    
+    .about__flex{
+        display: flex;
+        flex-direction: row;
+        gap: 1.8rem;
+        align-items: center;
+    }
+    
+    .about__flex__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 21.8rem;
+    }
+    
+    .about__flex__block__text{
+        width: 100%;
+    }
+    
+    .about__flex__block__text h4{
+        width: 21.8rem;
+    }
+    
+    .about__flex__block__text p{
+        width: 21.8rem;
+    }
+
+    .content__employees{
+        margin: 7.5rem 10.6rem  7.5rem 10.6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+    
+    .employees__block button:hover{
+        border: 3px solid #FCB72B;
+        background-color: #fff;
+        color: #FCB72B;
+    }
+
+    .footer{
+        margin-top: 7.5rem;
+    }
+    
+    .footer__signup{
+        height: 18.75rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: url(/starter-code/assets/patterns/semi-circles.svg),
+        #495567;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-x: 14rem;
+        background-position-y: bottom;
+        text-align: left;
+        gap: 2.5rem;
+        padding: 0 10.3rem;
+    }
+    
+    .footer__signup h2{
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14px;
+        color: #fff;
+        width: 25.9rem;
+    }
+    
+    .footer__signup__links{
+        display: flex;
+        flex-direction: row;
+        gap: 1.1rem;
+    }
+    
+    .footer__signup__links img{
+        width: 9.9rem;
+        height: 3.5rem;
+        cursor: pointer;
+    }
+    
+    .footer__links{
+        height: 6rem;
+        padding: 0 10.6rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .footer__links__logo svg path{
+        fill: #fff;
+    }
+    
+    .footer__links__contact ul{
+        margin-left: -19rem;
+        flex-direction: row;
+        text-align: center;
+        gap: 1.75rem;
+    }
+    
+    .footer__links__contact ul li a:hover{
+        color: #FCB72B;
+    }
+    
+    .footer__links__social ul li:hover a svg path{
+        fill: #E5ECF4;
+    }
+}
